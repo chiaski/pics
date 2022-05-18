@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flowers</title>
+<body>
+  
+<a href="index.html">back</a>
+<p>flowers</p>
+
+<?php
+$files = glob("pics/flowers/*.*");
+for ($i = 0; $i < count($files); $i++) {
+    $image = $files[$i];
+    echo basename($image) . " "; // show only image name if you want to show full path then use this code // echo $image."<br />";
+    echo '<img src="' . $image . '" alt="Random image" width="300" />' . " ";
+
+}
+?>
+  
+  </body>
+</html>
