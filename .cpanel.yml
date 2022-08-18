@@ -1,4 +1,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/chialucb/pics/
-    - /bin/cp -R public/* $DEPLOYPATH
+    - /bin/cp -R /public/* $DEPLOYPATH
