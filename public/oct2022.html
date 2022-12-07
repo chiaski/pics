@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/october 2022</title>
+  
+  <style type="text/css">
+    
+    body{padding: 2.5vw; vertical-align: top;}
+    
+    .pic{
+      display: inline-block;
+      margin: 1em 0;
+      font-size: .8em;
+    }
+    
+    img{
+      padding: .25em 0;
+    }
+    
+  </style>
+  </head>
+<body>
+  
+<a href="index.html">back</a>
+<p>/october 2022</p>
+  
+<?php
+$files = glob("pics/oct2022/*.*");
+for ($i = 0; $i < count($files); $i++) {
+    $image = $files[$i];
+    echo '<div class="pic">' . "";
+    echo basename($image) . "<br>";
+    echo '<img src="' . $image . '" alt="Random image" width="300" /></div>' . " ";
+
+}
+?>
+  </body>
+</html>
