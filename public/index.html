@@ -15,7 +15,6 @@
     ul li {
       text-align: left;
     }
-
   </style>
 </head>
 
@@ -51,12 +50,17 @@
         </ul>
         <br><br>
 
+        <a href onclick="wrap();">2022 wrapped</a><br>
         <a href="https://chias.website">back to chias.website</a>
+
+        <script type="text/javascript">
+          function wrap() {
+            window.open('wrapped.html', 'wrapped', 'width=250,height=100,left=' + ((window.screen.width * .8) / 2) + ',top=' + ((window.screen.height * .8) / 2));
+          }
+        </script>
 
       </center>
     </main>
 
   </div>
-</body>
-
-</html>
+</body></html>
