@@ -12,9 +12,17 @@
       align-items: center;
     }
 
+    ul {
+      max-width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     ul li {
+      width: 150px;
       text-align: left;
     }
+
   </style>
 </head>
 
@@ -40,6 +48,7 @@
         <ul>
           <li><a href="frog.html">frog</a></li>
           <li><a href="clouds.html">clouds</a></li>
+          <li><a href="engine.html">engine.lol</a></li>
           <li><a href="flowers.html">flowers</a></li>
           <li><a href="food.html">food</a></li>
           <li><a href="cemeteries.html">cemeteries</a></li>
@@ -57,10 +66,13 @@
           function wrap() {
             window.open('wrapped.html', 'wrapped', 'width=250,height=100,left=' + ((window.screen.width * .8) / 2) + ',top=' + ((window.screen.height * .8) / 2));
           }
+
         </script>
 
       </center>
     </main>
 
   </div>
-</body></html>
+</body>
+
+</html>
